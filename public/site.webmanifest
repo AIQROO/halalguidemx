@@ -1,0 +1,16 @@
+{
+  "name": "Halal Guide MX — Muslim-Friendly Riviera Maya",
+  "short_name": "Halal Guide MX",
+  "description": "Verified halal restaurants, mosques, and Muslim travel services across Cancún, Playa del Carmen, and Tulum.",
+  "start_url": "/",
+  "display": "standalone",
+  "background_color": "#FCF9F2",
+  "theme_color": "#072A30",
+  "icons": [
+    {
+      "src": "/favicon.ico",
+      "sizes": "any",
+      "type": "image/x-icon"
+    }
+  ]
+}

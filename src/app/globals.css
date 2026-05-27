@@ -1,0 +1,93 @@
+@import "tailwindcss";
+
+@theme {
+  --color-teal-deep: #072a30;
+  --color-teal-medium: #0d3f47;
+  --color-teal-light: #16535d;
+  --color-terracotta: #c15c3d;
+  --color-terracotta-hover: #a24b30;
+  --color-olive: #556b2f;
+  --color-olive-dark: #405220;
+  --color-cream: #fcf9f2;
+  --color-cream-dark: #f5f0e3;
+  --color-caribbean: #00a896;
+  --color-caribbean-light: #02c39a;
+  --color-sand: #efead8;
+  --color-sand-light: #f7f4eb;
+  --color-sand-dark: #ded6be;
+  
+  --font-serif: var(--font-playfair);
+  --font-sans: var(--font-outfit);
+}
+
+:root {
+  --background: #fcf9f2;
+  --foreground: #072a30;
+}
+
+body {
+  background-color: var(--background);
+  color: var(--foreground);
+  overflow-x: hidden;
+}
+
+/* Custom Scrollbar */
+::-webkit-scrollbar {
+  width: 10px;
+}
+::-webkit-scrollbar-track {
+  background: #fcf9f2;
+}
+::-webkit-scrollbar-thumb {
+  background: #efead8;
+  border-radius: 5px;
+}
+::-webkit-scrollbar-thumb:hover {
+  background: #ded6be;
+}
+
+/* Glassmorphism Styles */
+.glass-nav {
+  background-color: rgba(252, 249, 242, 0.75);
+  backdrop-filter: blur(12px);
+  -webkit-backdrop-filter: blur(12px);
+  border-bottom: 1px solid rgba(7, 42, 48, 0.05);
+}
+
+.glass-card {
+  background: rgba(255, 255, 255, 0.65);
+  backdrop-filter: blur(8px);
+  -webkit-backdrop-filter: blur(8px);
+  border: 1px solid rgba(239, 234, 216, 0.7);
+}
+
+.glass-card-dark {
+  background: rgba(7, 42, 48, 0.85);
+  backdrop-filter: blur(12px);
+  -webkit-backdrop-filter: blur(12px);
+  border: 1px solid rgba(22, 83, 93, 0.2);
+}
+
+/* Geometric Overlay Grid Pattern */
+.bg-grid-pattern {
+  background-size: 40px 40px;
+  background-image: 
+    linear-gradient(to right, rgba(7, 42, 48, 0.02) 1px, transparent 1px),
+    linear-gradient(to bottom, rgba(7, 42, 48, 0.02) 1px, transparent 1px);
+}
+
+/* Custom Smooth Transitions */
+.transition-luxury {
+  transition: all 0.5s cubic-bezier(0.16, 1, 0.3, 1);
+}
+
+/* Islamic Geometric Subtle Accent Dot Pattern */
+.bg-islamic-dot {
+  background-image: radial-gradient(rgba(193, 92, 61, 0.15) 1.5px, transparent 1.5px);
+  background-size: 24px 24px;
+}
+
+/* Soft Tropical Shadow Leaf */
+.leaf-shadow {
+  filter: drop-shadow(0 10px 15px rgba(85, 107, 47, 0.08));
+}
