@@ -75,21 +75,12 @@ export const metadata: Metadata = {
       "Verified halal restaurants, Muslim-friendly venues, active mosques, halal-meat delivery, and Muslim wedding & transfer services in Cancún, Playa del Carmen, and Tulum.",
     locale: "en_US",
     alternateLocale: ["es_MX", "fr_FR", "ar_AR"],
-    images: [
-      {
-        url: "/riviera_maya_sunset.png",
-        width: 1200,
-        height: 630,
-        alt: "Sunset over the Riviera Maya — Halal Guide MX",
-      },
-    ],
   },
   twitter: {
     card: "summary_large_image",
     title: "Halal Guide MX — Muslim-Friendly Riviera Maya Travel Guide",
     description:
       "Verified halal restaurants, mosques, and Muslim travel services across Cancún, Playa del Carmen, and Tulum.",
-    images: ["/riviera_maya_sunset.png"],
   },
   robots: {
     index: true,
@@ -101,11 +92,6 @@ export const metadata: Metadata = {
       "max-snippet": -1,
       "max-video-preview": -1,
     },
-  },
-  icons: {
-    icon: "/favicon.ico",
-    shortcut: "/favicon.ico",
-    apple: "/favicon.ico",
   },
   manifest: "/site.webmanifest",
 };
@@ -127,7 +113,7 @@ const organizationJsonLd = {
   "@id": `${SITE_URL}#organization`,
   name: "Halal Guide MX",
   url: SITE_URL,
-  logo: `${SITE_URL}/riviera_maya_sunset.png`,
+  logo: `${SITE_URL}/icon`,
   description:
     "Locally vetted, boutique travel guide to halal restaurants, mosques, and Muslim-friendly services across the Mexican Caribbean.",
   areaServed: [
