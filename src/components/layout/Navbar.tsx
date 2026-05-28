@@ -1,24 +1,14 @@
 "use client";
 
-import React, { useState, useEffect } from "react";
+import React, { useState } from "react";
 import Logo from "../ui/Logo";
 import { Menu, X, ArrowUpRight, Globe } from "lucide-react";
 import { useLanguage } from "@/context/LanguageContext";
 import { Language } from "@/translations/dictionary";
 
 export default function Navbar() {
-  const [isScrolled, setIsScrolled] = useState(false);
   const [isMobileMenuOpen, setIsMobileMenuOpen] = useState(false);
   const { language, setLanguage, t, dir } = useLanguage();
-
-  useEffect(() => {
-    const handleScroll = () => {
-      setIsScrolled(window.scrollY > 20);
-    };
-    handleScroll();
-    window.addEventListener("scroll", handleScroll, { passive: true });
-    return () => window.removeEventListener("scroll", handleScroll);
-  }, []);
 
   const navLinks = [
     { name: t("navDiscover"), href: "#discover" },
@@ -29,35 +19,17 @@ export default function Navbar() {
     { name: t("navFaq"), href: "#faq" },
   ];
 
-  // Color tokens — switch between hero (light text on dark teal hero) and scrolled (dark text on cream glass)
-  const linkColor = isScrolled
-    ? "text-teal-deep hover:text-terracotta"
-    : "text-cream/90 hover:text-terracotta";
-
-  const selectorWrap = isScrolled
-    ? "border-teal-light/20 bg-[#FAF6F0]/65 hover:border-terracotta"
-    : "border-cream/25 bg-cream/10 hover:border-terracotta";
-
-  const selectorIcon = isScrolled ? "text-teal-deep/60" : "text-cream/80";
-  const selectorText = isScrolled ? "text-teal-deep" : "text-cream";
-
-  const ctaButton = isScrolled
-    ? "bg-teal-deep hover:bg-terracotta text-cream shadow-md shadow-teal-deep/10 hover:shadow-terracotta/20"
-    : "bg-cream hover:bg-terracotta text-teal-deep hover:text-cream shadow-md shadow-teal-deep/20 hover:shadow-terracotta/30";
-
-  const mobileBtnColor = isScrolled
-    ? "text-teal-deep hover:text-terracotta hover:bg-sand/30"
-    : "text-cream hover:text-terracotta hover:bg-cream/10";
+  // Cream navbar at all times — dark teal text on cream glass
+  const linkColor = "text-teal-deep hover:text-terracotta";
+  const selectorWrap = "border-teal-light/20 bg-[#FAF6F0]/65 hover:border-terracotta";
+  const selectorIcon = "text-teal-deep/60";
+  const selectorText = "text-teal-deep";
+  const ctaButton = "bg-teal-deep hover:bg-terracotta text-cream shadow-md shadow-teal-deep/10 hover:shadow-terracotta/20";
+  const mobileBtnColor = "text-teal-deep hover:text-terracotta hover:bg-sand/30";
 
   return (
     <>
-      <nav
-        className={`fixed top-0 left-0 right-0 z-50 w-full transition-all duration-500 ${
-          isScrolled
-            ? "glass-nav py-3 shadow-md shadow-[#072a30]/[0.02]"
-            : "bg-transparent py-6"
-        }`}
-      >
+      <nav className="fixed top-0 left-0 right-0 z-50 w-full glass-nav py-3 shadow-md shadow-[#072a30]/[0.02]">
         <div className="mx-auto max-w-7xl px-4 sm:px-6 lg:px-8">
           <div className="flex items-center justify-between">
             {/* Logo */}
@@ -66,7 +38,7 @@ export default function Navbar() {
               aria-label="Halal Guide MX — Home"
               className="flex-shrink-0 transition-opacity hover:opacity-90"
             >
-              <Logo light={!isScrolled} />
+              <Logo />
             </a>
 
             {/* Desktop Navigation Links */}

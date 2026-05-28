@@ -10,10 +10,10 @@ export default function Footer() {
   const { t } = useLanguage();
 
   return (
-    <footer className="relative bg-[#072A30] text-[#FCF9F2] pt-20 pb-12 overflow-hidden border-t-4 border-[#C15C3D]">
+    <footer className="relative bg-cream text-teal-deep pt-20 pb-12 overflow-hidden border-t-4 border-[#C15C3D]">
       {/* Subtle Islamic Geometric Star Background Deco */}
-      <div className="absolute right-[-100px] bottom-[-100px] w-[350px] h-[350px] opacity-5 pointer-events-none">
-        <svg viewBox="0 0 100 100" fill="none" stroke="#FCF9F2" strokeWidth="1" className="w-full h-full rotate-12">
+      <div className="absolute right-[-100px] bottom-[-100px] w-[350px] h-[350px] opacity-[0.06] pointer-events-none">
+        <svg viewBox="0 0 100 100" fill="none" stroke="#072A30" strokeWidth="1" className="w-full h-full rotate-12">
           <polygon points="50,5 95,50 50,95 5,50" />
           <polygon points="50,5 95,50 50,95 5,50" className="rotate-45 origin-center" />
           <circle cx="50" cy="50" r="30" />
@@ -25,16 +25,13 @@ export default function Footer() {
           
           {/* Brand Info */}
           <div className="md:col-span-2 flex flex-col gap-6 text-left rtl:text-right">
-            {/* Same Logo as top, in full colored glory, nested inside a light sand badge container for perfect readability */}
-            <div className="bg-[#F7F4EB] px-5 py-3 rounded-2xl w-fit shadow-md border border-[#EFEAD8] transition-luxury hover:scale-[1.02]">
-              <Logo />
-            </div>
+            <Logo className="w-fit" />
 
-            <p className="font-sans text-[14px] text-cream/70 leading-relaxed max-w-md">
+            <p className="font-sans text-[14px] text-teal-deep/70 leading-relaxed max-w-md">
               {t("footerDesc")}
             </p>
 
-            <p className="font-sans text-[12px] text-cream/50 max-w-md leading-relaxed">
+            <p className="font-sans text-[12px] text-teal-deep/55 max-w-md leading-relaxed">
               {t("mosqueFootnote").split(".")[0].replace("Note: ", "").replace("ملاحظة: ", "")}
             </p>
 
@@ -62,21 +59,21 @@ export default function Footer() {
             <h3 className="font-serif text-[18px] font-bold text-terracotta">
               {t("exploreGuide")}
             </h3>
-            <ul className="flex flex-col gap-2.5 font-sans text-[14px] text-cream/70">
+            <ul className="flex flex-col gap-2.5 font-sans text-[14px] text-teal-deep/70">
               <li>
-                <a href="#discover" className="hover:text-cream transition-colors">{t("navDiscover")}</a>
+                <a href="#discover" className="hover:text-teal-deep transition-colors">{t("navDiscover")}</a>
               </li>
               <li>
-                <a href="#categories" className="hover:text-cream transition-colors">{t("navCategories")}</a>
+                <a href="#categories" className="hover:text-teal-deep transition-colors">{t("navCategories")}</a>
               </li>
               <li>
-                <a href="#destinations" className="hover:text-cream transition-colors">{t("navDestinations")}</a>
+                <a href="#destinations" className="hover:text-teal-deep transition-colors">{t("navDestinations")}</a>
               </li>
               <li>
-                <a href="#mosques" className="hover:text-cream transition-colors">{t("navMosques")}</a>
+                <a href="#mosques" className="hover:text-teal-deep transition-colors">{t("navMosques")}</a>
               </li>
               <li>
-                <a href="#services" className="hover:text-cream transition-colors">{t("navServices")}</a>
+                <a href="#services" className="hover:text-teal-deep transition-colors">{t("navServices")}</a>
               </li>
             </ul>
           </div>
@@ -84,8 +81,8 @@ export default function Footer() {
         </div>
 
         {/* Bottom bar */}
-        <div className="border-t border-[#0D3F47] pt-8 flex flex-col sm:flex-row items-center justify-between gap-4">
-          <p className="font-sans text-[13px] text-cream/50 text-center sm:text-left rtl:sm:text-right">
+        <div className="border-t border-teal-deep/15 pt-8 flex flex-col sm:flex-row items-center justify-between gap-4">
+          <p className="font-sans text-[13px] text-teal-deep/50 text-center sm:text-left rtl:sm:text-right">
             &copy; {currentYear} Halal Guide MX. {t("footerRights")}
           </p>
           <p className="font-sans text-[13px] font-semibold text-terracotta text-center sm:text-right rtl:sm:text-left">
