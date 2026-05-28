@@ -38,7 +38,7 @@ export default function Navbar() {
               aria-label="Halal Guide MX — Home"
               className="flex-shrink-0 transition-opacity hover:opacity-90"
             >
-              <Logo />
+              <Logo imgClassName="h-27 md:h-30" />
             </a>
 
             {/* Desktop Navigation Links */}
