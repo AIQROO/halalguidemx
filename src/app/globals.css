@@ -47,13 +47,6 @@ body {
 }
 
 /* Glassmorphism Styles */
-.glass-nav {
-  background-color: rgba(252, 249, 242, 0.75);
-  backdrop-filter: blur(12px);
-  -webkit-backdrop-filter: blur(12px);
-  border-bottom: 1px solid rgba(7, 42, 48, 0.05);
-}
-
 .glass-card {
   background: rgba(255, 255, 255, 0.65);
   backdrop-filter: blur(8px);
