@@ -26,7 +26,7 @@ export default function Hero() {
   };
 
   return (
-    <section className="relative min-h-[95vh] flex items-center pt-40 pb-16 overflow-hidden bg-gradient-to-br from-[#072A30] via-[#0D3F47] to-[#16535d] text-[#FCF9F2]">
+    <section className="relative min-h-[95vh] flex items-center pt-36 pb-16 overflow-hidden bg-gradient-to-br from-[#072A30] via-[#0D3F47] to-[#16535d] text-[#FCF9F2]">
       
       {/* Dynamic Background Overlays */}
       {/* 1. CSS grid pattern for map-inspired feel */}

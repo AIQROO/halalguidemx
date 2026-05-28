@@ -25,7 +25,7 @@ export default function Footer() {
           
           {/* Brand Info */}
           <div className="md:col-span-2 flex flex-col gap-6 text-left rtl:text-right">
-            <Logo className="w-fit" />
+            <Logo className="w-fit" imgClassName="h-24 md:h-28" />
 
             <p className="font-sans text-[14px] text-teal-deep/70 leading-relaxed max-w-md">
               {t("footerDesc")}

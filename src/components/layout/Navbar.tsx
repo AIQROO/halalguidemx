@@ -29,7 +29,7 @@ export default function Navbar() {
 
   return (
     <>
-      <nav className="fixed top-0 left-0 right-0 z-50 w-full bg-cream border-b border-teal-deep/10 py-3 shadow-md shadow-[#072a30]/[0.02]">
+      <nav className="fixed top-0 left-0 right-0 z-50 w-full bg-cream border-b border-teal-deep/10 py-1.5 shadow-md shadow-[#072a30]/[0.02]">
         <div className="mx-auto max-w-7xl px-4 sm:px-6 lg:px-8">
           <div className="flex items-center justify-between">
             {/* Logo */}
