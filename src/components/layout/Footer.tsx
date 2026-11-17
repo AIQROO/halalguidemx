@@ -83,7 +83,8 @@ export default function Footer() {
         {/* Bottom bar */}
         <div className="border-t border-teal-deep/15 pt-8 flex flex-col sm:flex-row items-center justify-between gap-4">
           <p className="font-sans text-[13px] text-teal-deep/50 text-center sm:text-left rtl:sm:text-right">
-            &copy; {currentYear} Halal Guide MX. {t("footerRights")}
+            &copy; {currentYear} Halal Guide MX. {t("footerRights")} · Dropped by{" "}
+            <a href="https://acidmkt.com/" target="_blank" rel="noopener" className="underline hover:text-teal-deep">Acid MKT - Marketing agency in Cancún</a>
           </p>
           <p className="font-sans text-[13px] font-semibold text-terracotta text-center sm:text-right rtl:sm:text-left">
             {t("footerSlogan")}
